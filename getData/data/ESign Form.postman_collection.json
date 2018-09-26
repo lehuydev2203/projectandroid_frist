@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "97dd1e64-173c-4d7a-ad38-bfb503720261",
+		"name": "ESign Form",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://iwantoutsource.com/eform_sign/list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3N1ZXJfb2ZfdGhlX3Rva2VuIjoiRGF2aWQiLCJ1c2VyX2RlZmF1bHQiOjEsInN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRlIjoxNTMzODEyMjU5fQ.3K_zp6ANFcqwNuu3p055W1yBGD02Z7DN8FmymPUu5mo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://iwantoutsource.com/eform_sign/list",
+					"protocol": "http",
+					"host": [
+						"iwantoutsource",
+						"com"
+					],
+					"path": [
+						"eform_sign",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://iwantoutsource.com/eform_sign/update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3N1ZXJfb2ZfdGhlX3Rva2VuIjoiRGF2aWQiLCJ1c2VyX2RlZmF1bHQiOjEsInN0YXR1cyI6InN1Y2Nlc3MiLCJkYXRlIjoxNTMzODEyMjU5fQ.3K_zp6ANFcqwNuu3p055W1yBGD02Z7DN8FmymPUu5mo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "image",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image_url",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "date_update",
+							"value": "2018-08-10 14:24:42",
+							"type": "text"
+						},
+						{
+							"key": "image_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://iwantoutsource.com/eform_sign/update",
+					"protocol": "https",
+					"host": [
+						"iwantoutsource",
+						"com"
+					],
+					"path": [
+						"eform_sign",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

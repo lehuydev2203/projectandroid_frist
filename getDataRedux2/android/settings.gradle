@@ -1,0 +1,3 @@
+rootProject.name = 'getDataRedux2'
+
+include ':app'
